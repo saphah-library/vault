@@ -1,0 +1,55 @@
+title: Saphah Vault
+description: Vault Display Service
+
+collections:
+  main:
+    output: true
+    permalink: /main/:path/
+
+  vault1:
+    output: true
+    permalink: /vault1/:path/
+
+  vault2:
+    output: true
+    permalink: /vault2/:path/
+
+  vault3:
+    output: true
+    permalink: /vault3/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: main
+    values:
+      layout: default
+
+  - scope:
+      path: ""
+      type: vault1
+    values:
+      layout: default
+
+  - scope:
+      path: ""
+      type: vault2
+    values:
+      layout: default
+
+  - scope:
+      path: ""
+      type: vault3
+    values:
+      layout: default
+
+include:
+  - firebase/_data/main
+  - firebase/_data/vault1
+  - firebase/_data/vault2
+  - firebase/_data/vault3
+
+exclude:
+  - node_modules
+  - tools
+  - firebase/_data/library
