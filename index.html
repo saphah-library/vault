@@ -3,12 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <title>403</title>
+
+<link rel="stylesheet" href="https://saphah-library.github.io/firebase/_data/css/public.css">
+
 <style>
 html, body {
     height: 100%;
     margin: 0;
-    background-color: #0a0a0a;
-    color: #c0c0c0;
     font-family: Consolas, monospace;
 }
 
@@ -17,29 +18,80 @@ html, body {
     align-items: center;
     justify-content: center;
     height: 100%;
+    padding: 20px;
 }
 
 .box {
+    max-width: 650px;
     text-align: left;
     line-height: 1.6;
 }
 
 .code {
     color: #888;
+    font-size: 14px;
+    margin-bottom: 10px;
 }
 
 .msg {
-    margin-top: 8px;
-    color: #bbb;
+    margin-top: 10px;
+}
+
+.strong {
+    color: #00ff88;
+    font-weight: bold;
+}
+
+.warn {
+    opacity: 0.9;
+}
+
+.dim {
+    opacity: 0.75;
 }
 </style>
+
 </head>
+
 <body>
+
 <div class="container">
-    <div class="box">
-        <div class="code">403 Forbidden</div>
-        <div class="msg">No public index available at this stage.</div>
+
+    <div class="box public-card">
+
+        <div class="code">ACCESS DENIED: VAULT NODE 1</div>
+
+        <div class="msg strong">
+            This vault is currently locked.
+        </div>
+
+        <div class="msg">
+            The system has restricted public access to this section.
+        </div>
+
+        <div class="msg warn">
+            All content is under controlled indexing and is not yet available for viewing.
+        </div>
+
+        <div class="msg dim">
+            Under construction. Structure stabilisation in progress.
+        </div>
+
+        <div class="msg dim">
+            No pages, listings, or navigation are currently exposed.
+        </div>
+
+        <div class="msg strong" style="margin-top:18px;">
+            Access will be enabled once system validation is complete.
+        </div>
+
+        <div class="msg code" style="margin-top:18px;">
+            // NODE LOCKED //
+        </div>
+
     </div>
+
 </div>
+
 </body>
 </html>
